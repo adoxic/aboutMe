@@ -15,34 +15,39 @@ button.onclick = function() {
     if(confirmPopup === false) {
         return;
     }
-    let quizScore = 0;
+    let quizScore = 0 / 3;
 
     const firstQuestion = prompt('Are there spiders on this page? (Y/N)');
     
     if(isYes(firstQuestion) === true) {
-        quizScore += 1;
+        quizScore += 1 / 3;
     }
 
     const secQuestion = prompt('Did I do to Tyler School of art? (Y/N)');
 
     if(isYes(secQuestion) === false) {
-        quizScore += 1;
+        quizScore += 1 / 3;
     }
     
     const thirdQuestion = prompt('Did I study Fine Art? (Y/N)');
     if(isYes(thirdQuestion) === true) {
-        quizScore += 1;
+        quizScore += 1 / 3;
     }
-    
-    if(quizScore <= 1) {
-        quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct, that is not good.';
+
+    quizScore = quizScore * 100;
+
+    quizScore = Math.round(quizScore);
+
+    if(quizScore <= 34) {
+        quizScore = 'Wow ' + name + ' you got ' + quizScore + '% correct, that is not good.';
         finalScore.classList.add('red');
-    } else if(quizScore === 2) {
+    } else if(quizScore <= 67) {
         finalScore.classList.add('yellow');
-        quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct that is fine, maybe give it another read?';
-    } else if(quizScore === 3) {
+
+        quizScore = 'Wow ' + name + ' you got ' + quizScore + '% correct that is fine, maybe give it another read?';
+    } else if(quizScore > 70) {
         finalScore.classList.add('green');
-        quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct that is perfect! Good job!';
+        quizScore = 'Wow ' + name + ' you got ' + quizScore + '% answers correct that is perfect! Good job!';
     }
 
     alert('You will now get your score!');
