@@ -36,9 +36,12 @@ button.onclick = function() {
     
     if(quizScore <= 1) {
         quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct, that is not good.';
+        finalScore.classList.add('red');
     } else if(quizScore === 2) {
+        finalScore.classList.add('yellow');
         quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct that is fine, maybe give it another read?';
     } else if(quizScore === 3) {
+        finalScore.classList.add('green');
         quizScore = 'Wow ' + name + ' you got ' + quizScore + ' answers correct that is perfect! Good job!';
     }
 

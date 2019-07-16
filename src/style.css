@@ -59,4 +59,20 @@ Button:active {
 .result {
     background: #C4C3B3;
     color: #636D52;
+    border-radius: 6px;
+    padding: 10px;
+    text-size-adjust: 20px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: #636D52;
+    color: #C4C3B3;
 }
