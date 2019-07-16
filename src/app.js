@@ -15,7 +15,7 @@ button.onclick = function() {
     if(confirmPopup === false) {
         return;
     }
-    let quizScore = 0 / 3;
+    let quizScore = 0;
 
     const firstQuestion = prompt('Are there spiders on this page? (Y/N)');
     
