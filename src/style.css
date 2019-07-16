@@ -54,3 +54,9 @@ Button:hover {
 
 Button:active {
     background: url(/assets/spiderplant.jpg); }
+
+
+.result {
+    background: #C4C3B3;
+    color: #636D52;
+}
