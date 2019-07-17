@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compair Numbers</title>
+    <link rel="stylesheet" type="text/css" href="/src/numberGame.css"
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="numberGame.html">Game</a>
+        </nav>
+        <h1>This is a Number guessing game!</h1>
+    </header>
+
+    <p class="rules">Hello! Put a number between 1 and 20 into the box and see if it matches 
+        the myster number.  You will receive three hints telling you that you
+        guessed too high or too low.  Good luck!
+    </p>
+
+    <div class="boxes">
+       <input id="input">  
+       <button id="guessButton">do thing?</button>
+    </div>
+     
+    <div class="feedback">
+      <span id="feedback">for now</span>
+      <p class="try" id="trysLeft">Trys Left</p>
+    </div>
+    <footer id="winLose"></footer>
+    <script type="module" src="src/numberGame.js"></script>
+</body>
+
+</html>
