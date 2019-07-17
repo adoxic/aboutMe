@@ -7,13 +7,15 @@ const feedback = document.getElementById('feedback');
 const winLose = document.getElementById('winLose');
 let trys = 4;
 
+
 //random integer syntax pulled from MDN https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 function getRandomInt(min, max) {
     min = Math.ceil(1);
     max = Math.floor(20);
     return Math.floor(Math.random() * (20 - 1)) + 1; 
 }
-let randomNum = getRandomInt(); 
+let randomNum = getRandomInt(1, 20); 
+
 
 button.addEventListener('click', () => {
     trysLeft.textContent = 'Trys Left ' + trys;
