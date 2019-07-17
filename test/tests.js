@@ -1,2 +1,2 @@
-import isYes from './isYes.test.js';
-import testsNumber from './';
+import './isYes.test.js';
+import './testsNumber.test.js';
