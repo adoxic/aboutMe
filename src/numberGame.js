@@ -1,14 +1,15 @@
 
-function numberGame() {
-    if(num === 6){
-        return true;
-    } else if(num < 6) {
+function numberGame(guess, correct) {
+    if(guess === correct){
+        return 0;
+    } else if(guess < correct) {
         return -1;
-    } else if(num > 6) {
+    } else if(guess > correct) {
         return 1;
-    } else if(num != Number) {
+    } else if(guess !== Number) {
         return false;
     }
+    
 }
 
 export default numberGame;

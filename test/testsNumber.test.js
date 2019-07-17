@@ -5,11 +5,12 @@ const test = QUnit.test;
 test('compair numbers', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const num = 'apple';
-    const expected = false;
+    const guess = 'banana';
+    const correct = 6;
+    const expected = true;
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = numberGame(num);
+    const result = numberGame(guess, correct);
     //Assert
     assert.equal(result, expected);
 });
