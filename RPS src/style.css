@@ -1,0 +1,32 @@
+html {
+    background-color: whitesmoke;
+}
+
+header {
+   text-align: center;
+   margin-bottom: 5px;
+   padding: 20px;
+   background-color: blanchedalmond;
+
+}
+
+body {
+    text-align: center;
+    margin-top: 40px;
+    border: solid 4px grey;
+}
+
+img {
+    height: 200px;
+}
+
+input:checked .img{
+    border: solid 4px blue;
+}
+img:checked {
+    border: solid 3px blue;
+}
+
+button:hover {
+    color: blue;
+}
