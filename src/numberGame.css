@@ -6,19 +6,21 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }   
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: #636D52
-}
 
 body {
     background: #C4C3B3;
     padding: 6px;
     border-radius: 6px;
-
+    max-width: 1100px;   
+    display: flex;
+    flex-wrap: wrap;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: #636D52
+}
 Button:hover {
     background: #C4C3B3; 
 }
@@ -39,9 +41,11 @@ background: url(/assets/spiderplant.jpg);
     justify-content: space-evenly;
 }   
 
-.boxes *, .feedback * {
-   height: 50px;
-   width: 50px;
+.boxes *, .active * {
+   min-width: 50px;
+   min-height: 50px;
+   max-width: 100px;
+   max-height: 100px;
    border: solid #636D52 3px;
    border-radius: 6px;
    margin-top: 30px;
@@ -53,4 +57,6 @@ background: url(/assets/spiderplant.jpg);
     width: 60px;
 }
 
+#feedback {
 
+}
