@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>rps</title>
     <link rel="stylesheet" href="/RPS src/style.css">
@@ -36,9 +36,24 @@
     <button id="fight">Fight!!</button>
   </p>
 
+  <p class="moves">
+    <span id="playerMove">
+        <img class="moveimg" id="p-rock" src="./assets/stone_PNG13612.png">
+        <img class="moveimg" id="p-paper" src="./assets/Paperball_yellow.png">
+        <img class="moveimg" id="p-scissors" src="./assets/scissors2.png">
+    </span>
+
+    <span id="compMove">
+        <img class="moveimg" id="c-rock" src="./assets/stone_PNG13612.png">
+        <img class="moveimg" id="c-paper" src="./assets/Paperball_yellow.png">
+        <img class="moveimg" id="c-scissors" src="./assets/scissors2.png">
+    </span>
+  </p>
+
   <p>
     <span class="loss" id="loss"></span>
     <span class="win" id="win"></span>
   </p>
+  <script src="./RPS src/app.js" type="module" ></script>
 </body>
 </html>

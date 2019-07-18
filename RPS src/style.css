@@ -30,3 +30,7 @@ img:checked {
 button:hover {
     color: blue;
 }
+
+.moveimg {
+    visibility: hidden;
+}

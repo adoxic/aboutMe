@@ -1,8 +1,9 @@
 function compPlay() {
-    Math.round(Math.random() * 3);
+    let num = Math.round(Math.random() * 2);
+    return num;
 }
 
-
+export default compPlay;
 
 
 
