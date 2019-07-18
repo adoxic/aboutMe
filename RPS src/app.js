@@ -8,7 +8,9 @@ const pow = document.getElementById('pow');
 const compImg = document.getElementById('compMove');
 const win = document.getElementById('win');
 const lose = document.getElementById('loss');
-
+const betButton = document.getElementById('bet-button');
+const playCash = document.getElementById('play-cash');
+const playerBet = document.getElementById('player-bet');
 
 let humanScore = 0;
 let computerScore = 0;
