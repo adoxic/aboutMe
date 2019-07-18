@@ -1,35 +1,53 @@
 import compPlay from './RPS.js';
+import rpsCompair from './RPScomp.js';
 
 const fight = document.getElementById('fight');
 
-const playerRockImg = document.getElementById('p-rock');
-const playerPaperImg = document.getElementById('p-paper');
-const playerScissorImg = document.getElementById('p-scissors');
+const playerImg = document.getElementById('playerMove');
+const pow = document.getElementById('pow');
+const compImg = document.getElementById('compMove');
+const win = document.getElementById('win');
+const lose = document.getElementById('loss');
 
-const compRockImg = document.getElementById('c-rock');
-const compPaperImg = document.getElementById('c-paper');
-const compScissorImg = document.getElementById('c-scissors');
 
-let compMove = compPlay();
-
+let humanScore = 0;
+let computerScore = 0;
 
 fight.addEventListener('click', () => {
-    let compMove = compPlay();
-    console.log(compMove);
-    if(compMove === 0) {
-        compRockImg.classList.remove('moveimg');
-        compPaperImg.classList.add('moveimg');
-        compScissorImg.classList.add('moveimg');
-        return;
-    } else if(compMove === 1) {
-        compRockImg.classList.add('moveimg');
-        compPaperImg.classList.remove('moveimg');
-        compScissorImg.classList.add('moveimg');
-        return;
-    } else if(compMove === 2) {
-        compRockImg.classList.add('moveimg');
-        compPaperImg.classList.add('moveimg');
-        compScissorImg.classList.remove('moveimg');
-        return;
+    
+    compImg.classList.remove('hidden');
+    pow.classList.remove('hidden');
+    
+    const compMove = compPlay();
+    const src = './assets/' + compMove + '.png';
+    compImg.src = src;
+
+    const checked = document.querySelector('input:checked');
+    let guess = 0;
+
+    if(checked.value === 'rock') {
+        playerImg.classList.remove('hidden');
+        playerImg.src = './assets/stone_PNG13612.png';
+        guess = 0;
+    } else if(checked.value === 'paper') {
+        playerImg.classList.remove('hidden');
+        playerImg.src = './assets/Paperball_yellow.png';
+        guess = 1;
+    } else if(checked.value === 'scissors') {
+        playerImg.classList.remove('hidden');
+        playerImg.src = './assets/scissors2.png';
+        guess = 2;
     }
+    
+    let isFighting = rpsCompair(guess, compMove);
+
+    if(isFighting === 1) {
+        humanScore += 1;
+        win.textContent = humanScore;
+    } else if(isFighting === 2) {
+        computerScore += 1;
+        lose.textContent = computerScore;
+    }
+  
 });
+

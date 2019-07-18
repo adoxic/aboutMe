@@ -17,42 +17,48 @@
   </header>
 
   <p id="rps-lables">
+    <form id="rps-radio">
     <label class="rock"> 
       <img class="img" src="./assets/stone_PNG13612.png">
-      <input type="radio" id="rock" name="rps" checked>
+      <input type="radio" id="rock" name="rps" value="rock">
     </label>
 
     <label class="paper">
         <img class="img" src="./assets/Paperball_yellow.png">
-      <input type="radio" id="paper" name="rps" checked>   
+      <input type="radio" id="paper" name="rps" value="paper">   
     </label>
 
     <label class="scissors">
         <img class="img" src="./assets/scissors2.png">
-      <input type="radio" id="scissors" name="rps" checked>
+      <input type="radio" id="scissors" name="rps" value="scissors">
     </label>
+  </form>
   </p>
   <p>
     <button id="fight">Fight!!</button>
   </p>
 
   <p class="moves">
-    <span id="playerMove">
-        <img class="moveimg" id="p-rock" src="./assets/stone_PNG13612.png">
-        <img class="moveimg" id="p-paper" src="./assets/Paperball_yellow.png">
-        <img class="moveimg" id="p-scissors" src="./assets/scissors2.png">
-    </span>
+    <img class="hidden" id="playerMove" src="./assets/scissors2.png" src="./assets/Paperball_yellow.png" src="./assets/stone_PNG13612.png">
+      
 
-    <span id="compMove">
-        <img class="moveimg" id="c-rock" src="./assets/stone_PNG13612.png">
-        <img class="moveimg" id="c-paper" src="./assets/Paperball_yellow.png">
-        <img class="moveimg" id="c-scissors" src="./assets/scissors2.png">
-    </span>
+    <img class="hidden" src="assets/vs.png" id="pow">
+
+    <img class="hidden" id="compMove" src="./assets/scissors2.png" src="./assets/Paperball_yellow.png" src="./assets/stone_PNG13612.png">
+    
   </p>
-
+  <div class="scoreSpace">
+    <div class="your-score">
+      Your Score
+      <span class="win" id="win">0</span>
+    </div>
+    <div class="comp-score">
+      Computer's Score
+      <span class="loss" id="loss">0</span>
+    </div>
+  </div>
+    
   <p>
-    <span class="loss" id="loss"></span>
-    <span class="win" id="win"></span>
   </p>
   <script src="./RPS src/app.js" type="module" ></script>
 </body>

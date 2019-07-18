@@ -31,6 +31,18 @@ button:hover {
     color: blue;
 }
 
-.moveimg {
+.scoreSpace {
+    display: flex;
+    
+    justify-content: space-around;
+    border: solid 4px grey; 
+
+}
+.your-score, .comp-score {
+    width: 45vw;
+    border: solid 4px grey;
+}
+
+.hidden {
     visibility: hidden;
 }
