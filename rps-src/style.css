@@ -1,5 +1,8 @@
 html {
     background-color: whitesmoke;
+    font-family: 'Barriecito', cursive;
+
+    
 }
 
 header {
@@ -18,31 +21,48 @@ body {
 
 img {
     height: 200px;
+    border: solid 4px transparent;
 }
 
-input:checked .img{
-    border: solid 4px blue;
+img:hover {
+    border: solid 4px gray;
 }
-img:checked {
-    border: solid 3px blue;
-}
+
+
 
 button:hover {
-    color: blue;
+    color: red;
+}
+
+.rules {
+    font-size: 25px;
+    color: gray;
 }
 
 .scoreSpace {
     display: flex;
     
     justify-content: space-around;
-    border: solid 4px grey; 
+    
 
 }
 .your-score, .comp-score {
-    width: 45vw;
-    border: solid 4px grey;
+    margin: 10px;
+    width: 35vw;
+    border: solid 4px gray;
+    background-color: blanchedalmond;
+    padding: 15px;
+    color: gray;
 }
 
 .hidden {
     visibility: hidden;
+}
+
+input {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
