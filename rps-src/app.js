@@ -27,7 +27,6 @@ fight.addEventListener('click', () => {
     compImg.src = src;
     
     const checked = document.querySelector('input:checked');
-    console.log(checked.value);
     
     if(checked.value === 'rock') {
         playerImg.classList.remove('hidden');
@@ -41,7 +40,6 @@ fight.addEventListener('click', () => {
     }
     
     let isFighting = rpsCompair(checked.value, compMove);
-    console.log(isFighting);
 
     if(isFighting === 'won') {
         humanScore += 1;

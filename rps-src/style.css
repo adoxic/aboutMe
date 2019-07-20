@@ -1,5 +1,6 @@
 html {
     background-color: whitesmoke;
+    color: gray;
 }
 
 header {
@@ -7,40 +8,68 @@ header {
    margin-bottom: 5px;
    padding: 20px;
    background-color: blanchedalmond;
-
+   border: solid 4px grey;
 }
 
 body {
     text-align: center;
+
     margin-top: 40px;
-    border: solid 4px grey;
+}
+
+
+a {
+    font-size: 30px;
+    color: gray;
 }
 
 img {
     height: 200px;
 }
 
-input:checked .img{
+input.betinput {
+    height: 22px;
+}
+
+input.img{
     border: solid 4px blue;
 }
+
 img:checked {
     border: solid 3px blue;
 }
 
+button {
+    color: gray;
+    font-size: 20px;
+    background-color: blanchedalmond;
+}
+
 button:hover {
-    color: blue;
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+}
+
+input.radio {
+    visibility: hidden;
+}
+
+p.betts {
+    display: flex;
+    justify-content: center;
 }
 
 .scoreSpace {
     display: flex;
-    
-    justify-content: space-around;
-    border: solid 4px grey; 
-
+    justify-content: space-evenly;
 }
+
 .your-score, .comp-score {
-    width: 45vw;
     border: solid 4px grey;
+    padding: 10px 30px;
+    background-color: blanchedalmond;
+    color: gray; 
 }
 
 .hidden {
