@@ -1,5 +1,5 @@
 import compPlay from './RPS.js';
-import rpsCompair from './RPScomp.js';
+import rpsCompair from './RPScomp.js/index.js.js';
 
 const fight = document.getElementById('fight');
 
