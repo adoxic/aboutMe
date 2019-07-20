@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Compair Numbers</title>
-    <link rel="stylesheet" type="text/css" href="/src/numberGame.css"
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/src/numberGame.css">
 </head>
 
-<body>
+<body class="center">
     <header>
         <nav>
             <a href="index.html">About</a>
-            <a href="numberGame.html">Game</a>
+            <a href="RPS.html">Rock Paper Scissors</a>
+            <a href="numberGame.html">Number Game</a>
         </nav>
         <h1>This is a Number guessing game!</h1>
     </header>
@@ -31,7 +34,9 @@
       <span id="feedback"></span>
       <p class="try" id="trysLeft">Trys Left 4</p>
     </div>
-    <span id="winLose"></span>
+
+    <span class="win-or-lose" id="winLose"></span>
+
     <script type="module" src="src/numberApp.js"></script>
 </body>
 

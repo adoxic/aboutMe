@@ -8,7 +8,7 @@ function numberGame(guess, correct) {
     } else if(parsedGuess > correct) {
         return 1;
     } else if(parsedGuess !== Number) {
-        return typeof(parsedGuess);
+        return 'I do not think this is a valid number.';
     }
     
 }

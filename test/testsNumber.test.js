@@ -41,3 +41,15 @@ test('too high', function(assert) {
     assert.equal(result, expected);
 });
 
+test('not valid', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const guess = 'cat';
+    const correct = 6;
+    const expected = 'I do not think this is a valid number.';
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = numberGame(guess, correct);
+    //Assert
+    assert.equal(result, expected);
+});
