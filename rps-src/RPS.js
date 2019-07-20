@@ -7,11 +7,11 @@ export default function compPlay() {
 
 export function compMove(compRandom) {
     if(compRandom === 0) {
-        return 'stone_PNG13612';
+        return 'rock';
     } else if(compRandom === 1) {
-        return 'Paperball_yellow';
+        return 'paper';
     } else if(compRandom === 2) {
-        return 'scissors2';
+        return 'scissors';
     }
     
 }

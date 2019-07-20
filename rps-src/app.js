@@ -15,6 +15,8 @@ const playerBet = document.getElementById('player-bet');
 let humanScore = 0;
 let computerScore = 0;
 
+
+
 fight.addEventListener('click', () => {
     
     compImg.classList.remove('hidden');
@@ -23,30 +25,28 @@ fight.addEventListener('click', () => {
     const compMove = compPlay();
     const src = './assets/' + compMove + '.png';
     compImg.src = src;
-
+    
     const checked = document.querySelector('input:checked');
-    let guess = 0;
-
+    console.log(checked.value);
+    
     if(checked.value === 'rock') {
         playerImg.classList.remove('hidden');
-        playerImg.src = './assets/stone_PNG13612.png';
-        guess = 0;
+        playerImg.src = './assets/rock.png';
     } else if(checked.value === 'paper') {
         playerImg.classList.remove('hidden');
-        playerImg.src = './assets/Paperball_yellow.png';
-        guess = 1;
+        playerImg.src = './assets/paper.png';
     } else if(checked.value === 'scissors') {
         playerImg.classList.remove('hidden');
-        playerImg.src = './assets/scissors2.png';
-        guess = 2;
+        playerImg.src = './assets/scissors.png';
     }
     
-    let isFighting = rpsCompair(guess, compMove);
+    let isFighting = rpsCompair(checked.value, compMove);
+    console.log(isFighting);
 
-    if(isFighting === 1) {
+    if(isFighting === 'won') {
         humanScore += 1;
         win.textContent = humanScore;
-    } else if(isFighting === 2) {
+    } else if(isFighting === 'lost') {
         computerScore += 1;
         lose.textContent = computerScore;
     }
