@@ -1,0 +1,97 @@
+html {
+    background-image: url(/assets/0003-monarch+butterfly.jpg);
+    background-repeat: repeat;
+
+}  
+
+body {
+    color: #BAC093;
+    text-align: center;
+    font-family:Helvetica, sans-serif;
+    background: #1B2C19;
+    border: 3px solid #C48729;
+    border-radius: 6px;
+    padding-top: 6px;
+    height: 100px;
+}
+
+article, aside {
+    color: #BAC093;
+    background: #1B2C19;
+    display: inline-block;
+    justify-content: flex-end;
+    flex-direction: column; 
+    padding: 10px;
+    border: 3px solid #C48729;
+    border-radius: 6px;
+
+}
+
+article {
+    width: 65%;
+    
+}
+
+aside {
+    width: 26%;
+
+}
+
+Button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    word-spacing: 10px; 
+    font-size: 30px; 
+    line-height: 30px; 
+    padding: 20px; 
+    border-radius: 6px; 
+    font-family: Georgia, serif; 
+    border: 3px solid #C48729; 
+}
+
+Button:hover {
+    background: #C48729; }
+
+Button:active {
+    background: url(/assets/spiderplant.jpg); 
+}
+
+img {
+    height: 200px;
+}
+
+.result {
+    background: #1B2C19;
+    color: #C48729;
+    border-radius: 6px;
+    padding: 10px;
+    text-size-adjust: 20px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: #C48729;
+    color: #1B2C19;
+}
+
+.styles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.styles img{
+    border: 5px solid #C48729;
+}
+
+.hidden {
+    visibility: hidden;
+}

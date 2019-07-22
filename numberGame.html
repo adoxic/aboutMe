@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compair Numbers</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/src/numberGame.css">
+</head>
+
+<body class="center">
+
+    <header>
+
+        <nav>
+            <a href="index.html">About</a>
+            <a href="RPS.html">Rock Paper Scissors</a>
+            <a href="numberGame.html">Number Game</a>
+        </nav>
+
+        <h1>This is a Number guessing game!</h1>
+
+    </header>
+
+    <p class="rules">
+        Hello! Put a number between 1 and 20 into the box and see if it matches 
+        the myster number.  You will receive three hints telling you that you
+        guessed too high or too low.  Good luck!
+    </p>
+
+    <div class="boxes">
+
+       <input id="input" min="1" max="20">  
+
+       <button id="guessButton">do thing?</button>
+
+    </div>
+     
+    <div class="active">
+
+      <span id="feedback"></span>
+
+      <p class="try" id="trysLeft">Trys Left 4</p>
+      
+    </div>
+
+    <span class="win-or-lose" id="winLose"></span>
+
+    <script type="module" src="src/numberApp.js"></script>
+</body>
+
+</html>

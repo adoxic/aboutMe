@@ -1,0 +1,96 @@
+html {
+    background-image: url(/assets/0005-Hex+Vine.jpg);
+    background-repeat: repeat;
+
+}  
+
+body {
+    text-align: center;
+    font-family:Helvetica, sans-serif;
+    background: #9FAFB3;
+    border: 3px solid #412D2D;
+    border-radius: 6px;
+    padding-top: 6px;
+    height: 100px;
+
+}
+
+article, aside {
+    background: #9FAFB3;
+    display: inline-block;
+    justify-content: flex-end;
+    flex-direction: column; 
+    padding: 10px;
+    border: 3px solid #412D2D;
+    border-radius: 6px;
+
+}
+
+article {
+    width: 65%;
+    
+}
+
+aside {
+    width: 26%;
+
+}
+
+Button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    word-spacing: 10px; 
+    font-size: 30px; 
+    line-height: 30px; 
+    padding: 20px; 
+    border-radius: 6px; 
+    font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; 
+    border: 3px solid #747C94; 
+}
+
+Button:hover {
+    background: #9FAFB3}
+
+Button:active {
+    background: url(/assets/spiderplant.jpg); 
+}
+
+img {
+    height: 200px;
+}
+
+.result {
+    background: #9FAFB3;
+    color: #412D2D;
+    border-radius: 6px;
+    padding: 10px;
+    text-size-adjust: 20px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: #412D2D;
+    color: #9FAFB3;
+}
+
+.styles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.styles img{
+    border: 5px solid #9FAFB3;
+}
+
+.hidden {
+    visibility: hidden;
+}

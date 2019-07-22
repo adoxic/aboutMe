@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rps</title>
+    <link rel="stylesheet" href="/rps-src/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+
+    </nav>
+    <p>
+     <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors">Rules for Rock Paper Scissors </a>
+  </header>
+
+  <p id="rps-lables">
+    <form id="rps-radio">
+    <label class="rock"> 
+      <img class="img" src="./assets/rock.png">
+      <input type="radio" id="rock" name="rps" value="rock" class="radio">
+    </label>
+
+    <label class="paper">
+        <img class="img" src="./assets/paper.png">
+      <input type="radio" id="paper" name="rps" value="paper" class="radio">   
+    </label>
+
+    <label class="scissors">
+        <img class="img" src="./assets/scissors.png">
+      <input type="radio" id="scissors" name="rps" value="scissors" class="radio">
+    </label>
+  </form>
+  </p>
+   
+  <p class="betts">
+    <p id="play-cash">100</p>
+    <input class='betinput' id="player-bet">
+    <button id="bet-button">Place Your Bet!</button>
+
+  </p>
+
+  <p>
+    <button id="fight">Fight!!</button>
+  </p>
+
+  <p class="moves">
+    <img class="hidden" id="playerMove" src="./assets/scissors.png" src="./assets/paper.png" src="./assets/rock.png">
+      
+
+    <img class="hidden" src="assets/vs.png" id="pow">
+
+    <img class="hidden" id="compMove" src="./assets/scissors.png" src="./assets/paper.png" src="./assets/rock.png">
+    
+  </p>
+  <div class="scoreSpace">
+    <div class="your-score">
+      Your Score
+      <span class="win" id="win">0</span>
+    </div>
+    <div class="comp-score">
+      Computer's Score
+      <span class="loss" id="loss">0</span>
+    </div>
+  </div>
+    
+  <p>
+  </p>
+  <script src="./rps-src/app.js" type="module" ></script>
+</body>
+</html>

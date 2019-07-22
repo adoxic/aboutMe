@@ -1,0 +1,95 @@
+html {
+    background-image: url(/assets/spiderplant.jpg);
+    background-repeat: repeat;
+
+}  
+
+body {
+    text-align: center;
+    font-family:Helvetica, sans-serif;
+    background: #C4C3B3;
+    border: 3px solid #636D52;
+    border-radius: 6px;
+    padding-top: 6px;
+    height: 100px;
+}
+
+article, aside {
+    background: #C4C3B3;
+    display: inline-block;
+    justify-content: flex-end;
+    flex-direction: column; 
+    padding: 10px;
+    border: 3px solid #636D52;
+    border-radius: 6px;
+
+}
+
+article {
+    width: 65%;
+    
+}
+
+aside {
+    width: 26%;
+
+}
+
+Button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    word-spacing: 10px; 
+    font-size: 30px; 
+    line-height: 30px; 
+    padding: 20px; 
+    border-radius: 6px; 
+    font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; 
+    border: 3px solid #636D52; 
+}
+
+Button:hover {
+    background: #C4C3B3; }
+
+Button:active {
+    background: url(/assets/spiderplant.jpg); 
+}
+
+img {
+    height: 200px;
+}
+
+.result {
+    background: #C4C3B3;
+    color: #636D52;
+    border-radius: 6px;
+    padding: 10px;
+    text-size-adjust: 20px;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: #636D52;
+    color: #C4C3B3;
+}
+
+.styles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.styles img{
+    border: 5px solid #636D52;
+}
+
+.hidden {
+    visibility: hidden;
+}
