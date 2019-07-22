@@ -1,5 +1,5 @@
 html {
-    background-image: url(assets/0005-Hex+Vine.jpg);
+    background-image: url(0005-Hex+Vine.jpg);
     background-repeat: repeat;
 
 }  
@@ -54,7 +54,7 @@ Button:hover {
     background: #9FAFB3}
 
 Button:active {
-    background: url(assets/spiderplant.jpg); 
+    background: url(spiderplant.jpg); 
 }
 
 img {
