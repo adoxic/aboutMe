@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    <link id="css" rel="stylesheet" type="text/css" href="./src/stylespider.css"
+     href="./src/stylevine.css" href="./src/stylebutterfly.css" href="./src/styledagger.css"/>
 </head>
 
 <body>
   <header>
     <h1 class="title">Welcome to the portfolio of Maeve Griffin</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/numberGame.html">Number Game</a>
+      <a href="/RPS.html">Rock Paper Scissors</a>
+    </nav>
   </header>
   
 
@@ -46,11 +52,39 @@
     </ol>
   </aside>
 
+  <p class="styles">
+    <label class="spider-style">
+      <button class="hidden" id="spider"></button>
+    
+      <img src="./assets/spiderplant.jpg">
+    </label>
+
+    <label class="butterfly-style">
+      <button class="hidden" id="butterfly"></button>
+
+      <img src="./assets/0003-monarch+butterfly.jpg">
+    </label>
+
+    <label class="vine-style">
+      <button class="hidden" id="vine"></button>
+
+      <img src="./assets/0005-Hex+Vine.jpg">
+    </label>
+
+    <label class="dagger-style">
+        <button class="hidden" id="dagger"></button>
+  
+        <img src="./assets/0006-Daggers.jpg">
+      </label>
+  </p>
 
   <button class="oversize" id="button">
     Start Test
   </button>
+
   <p class="result" id="score"></p>
+
+
   <script type="module" src="/src/app.js"></script>
 </body>
 </html>

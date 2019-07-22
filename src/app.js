@@ -2,6 +2,27 @@ import isYes from '../src/isYes.js';
 //reference DOM elements
 const button = document.getElementById('button');
 const finalScore = document.getElementById('score');
+const styleVine = document.getElementById('vine');
+const styleButterfly = document.getElementById('butterfly');
+const styleSpider = document.getElementById('spider');
+const styleDagger = document.getElementById('dagger');
+const cssFile = document.getElementById('css');
+
+styleVine.onclick = function() {
+    cssFile.href = './src/stylevine.css';
+};
+
+styleButterfly.onclick = function() {
+    cssFile.href = './src/stylebutterfly.css';
+};
+
+styleSpider.onclick = function() {
+    cssFile.href = './src/stylespider.css';
+};
+
+styleDagger.onclick = function() {
+    cssFile.href = './src/styledagger.css';
+};
 
 button.onclick = function() {
     let name = '';
