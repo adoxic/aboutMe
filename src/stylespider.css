@@ -1,5 +1,5 @@
 html {
-    background-image: url(./assets/spiderplant.jpg);
+    background-image: url(assets/spiderplant.jpg);
     background-repeat: repeat;
 
 }  
@@ -53,7 +53,7 @@ Button:hover {
     background: #C4C3B3; }
 
 Button:active {
-    background: url(/assets/spiderplant.jpg); 
+    background: url(assets/spiderplant.jpg); 
 }
 
 img {

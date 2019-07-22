@@ -1,5 +1,5 @@
 html {
-    background-image: url(./assets/0003-monarch+butterfly.jpg);
+    background-image: url(assets/0003-monarch+butterfly.jpg);
     background-repeat: repeat;
 
 }  
@@ -55,7 +55,7 @@ Button:hover {
     background: #C48729; }
 
 Button:active {
-    background: url(/assets/spiderplant.jpg); 
+    background: url(assets/spiderplant.jpg); 
 }
 
 img {
